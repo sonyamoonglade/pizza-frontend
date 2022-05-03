@@ -1,0 +1,40 @@
+
+
+.path.hide{
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.path{
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu_icon_open,
+.menu_icon_close{
+  opacity: 1;
+
+  text-align: center;
+
+  transition: all 0.2s ease-in-out;
+}
+.menu_icon_close{
+  margin-right: 5px
+}
+
+
+.menu_icon_close.hide,
+.menu_icon_open.hide{
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+
+.menu_icon_close.destroyed,
+.menu_icon_open.destroyed{
+  display: none;
+}

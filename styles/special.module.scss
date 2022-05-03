@@ -1,0 +1,48 @@
+@import 'styles/variables.scss';
+
+
+.special_card{
+  box-sizing: border-box;
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: $yellow;
+  cursor: pointer;
+  margin-right: 2rem;
+  transition: opacity .4s ease;
+  &:last-of-type{
+    margin-right: 0;
+  }
+}
+
+
+
+
+.title_touched.open{
+  opacity: 1;
+}
+
+.title_touched.close{
+  opacity: 0;
+}
+
+.special_list{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 30vh;
+  top: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-height: 670px) {
+    height: 27vh;
+  }
+  @media(min-height: 720px){
+    height: 24vh;
+  }
+  @media(min-height: 850px){
+    height: 22vh;
+  }
+}

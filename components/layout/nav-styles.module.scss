@@ -1,0 +1,36 @@
+@import 'styles/variables.scss';
+
+
+
+.mobile_nav{
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  transition: all .4s ease;
+  position: fixed;
+  background-color: white;
+  right: 0;
+
+}
+.mobile_nav_closed{
+  right: -100%
+}
+
+.nav_list{
+  list-style: none;
+  padding: 0;
+  padding: 1.5rem;
+}
+
+.nav_item{
+  font-weight: 600;
+  font-size: $font-lger;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

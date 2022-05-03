@@ -1,0 +1,34 @@
+
+@import 'styles/variables.scss';
+
+
+.special_title{
+  width: calc(100% - 10%);
+  transition: all 0.5s ease;
+  padding: 1rem;
+  position: absolute;
+  p{
+    padding-right: 2rem;
+    color: $gray-promo;
+    font-weight: 500;
+    font-size: $font-lg;
+  }
+
+}
+
+
+
+.special_title.closed{
+  opacity: 0;
+  transition: all 0.5s ease;
+
+
+}
+
+.special_description_touched{
+  font-size: $font-md !important;
+  letter-spacing: .7px;
+  font-weight: 400 !important;
+  margin-top: .7rem;
+}
+

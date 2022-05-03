@@ -1,0 +1,87 @@
+
+@import '../../styles/variables.scss';
+
+.layout{
+  background-color: #fff;
+  height: 100%;
+  display: block;
+}
+
+.header{
+  //margin-bottom: 2rem;?
+  height: 40vh;
+  display: block;
+
+  @media (min-height: 670px) {
+    height: 35vh;
+  }
+  @media(min-height: 850px){
+    height: 28vh;
+  }
+
+}
+
+.header_top{
+  position: fixed;
+  padding: 1rem;
+  height: fit-content;
+  display: flex;
+  z-index: 120;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+
+  p{
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.header_burger{
+  width: calc(25px * 1.2);
+  position: relative;
+  height: inherit;
+}
+
+.burger_el{
+  transform: scale(1.2);
+  background-color: black;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  border-radius: 10%;
+  height: 2px;
+  top: 0;
+}
+
+.burger_el:nth-of-type(1){
+  top: 10px;
+  transform: rotate(-18deg) scale(1.2);
+  height: 2px;
+
+}
+
+.burger_el:nth-of-type(2){
+  top: 18px;
+}
+
+.burger_side{
+
+}
+
+.burger_middle{
+
+}
+
+.cross{
+
+}
+
+
+
+
+
